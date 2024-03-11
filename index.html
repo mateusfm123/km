@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Corrida</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Calculadora de Corrida</h1>
+    <form>
+      <label for="start">Partida:</label>
+      <input
+        type="text"
+        id="start"
+        placeholder="Bairro, Cidade"
+        autocomplete="off"
+      />
+      <label for="end">Destino:</label>
+      <input
+        type="text"
+        id="end"
+        placeholder="Bairro, Cidade"
+        autocomplete="off"
+      />
+      <button type="button" onclick="calculateRoute()">Calcular</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
